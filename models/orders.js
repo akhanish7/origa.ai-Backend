@@ -1,6 +1,6 @@
 /**
- * Project: Read Count System
- * Description: Read Count system for stories(Pratilipi Test Project)
+ * Project: Origa.ai Backend
+ * Description: Backend Assignment for Origa.ai
  * Author: AK Hanish <akhanish7@gmail.com>
  */
 const mongoose = require('mongoose');
