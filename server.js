@@ -22,6 +22,12 @@ app.use(bodyParser.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// *ROUTES
+
+// require('./routes/order.route');
+const userRoute = require('./routes/users.route');
+app.use(userRoute);
+
 // * Initialize mongoose and start service
 mongoose
   .connect(

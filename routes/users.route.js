@@ -9,7 +9,7 @@ const router = express.Router();
 
 const userController = require('../controllers/user.controller');
 
-//POST for updating the user Collection with new feild
+//POST for updating the user Collection with new field
 router.post('/', userController.updateUser);
 
 module.exports = router;

@@ -4,7 +4,7 @@
  * Author: AK Hanish <akhanish7@gmail.com>
  */
 const mongoose = require('mongoose');
-const User = require('./users');
+const User = require('./users.model');
 
 const orderSchema = new mongoose.Schema({
   userId: {
