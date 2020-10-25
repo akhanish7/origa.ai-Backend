@@ -1,3 +1,9 @@
+/**
+ * Project: Origa.ai Backend
+ * Description: Backend Assignment for Origa.ai
+ * Author: AK Hanish <akhanish7@gmail.com>
+ */
+
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
