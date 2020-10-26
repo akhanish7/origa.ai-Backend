@@ -21,7 +21,6 @@ exports.orderDetails = async (req, res) => {
       orderArr.forEach((newOrder) => {
         averageBillValue = averageBillValue + newOrder.subTotal;
       });
-      console.log(orderArr);
       averageBillValue = Math.floor(averageBillValue / orderArr.length);
       resultArr.push({
         userId: user.userId,
