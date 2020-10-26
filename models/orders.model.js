@@ -13,12 +13,12 @@ const orderSchema = new mongoose.Schema({
   },
   subTotal: {
     type: Number,
-    required: true,
+    required: [true, 'Sub Total Required'],
   },
   date: {
     type: Date,
-    required: true,
+    required: [true, 'Date required'],
   },
 });
 
-module.exports = mongoose.model('Orders', orderSchema);
+module.exports = mongoose.model('orders', orderSchema);

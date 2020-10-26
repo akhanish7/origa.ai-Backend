@@ -7,12 +7,10 @@
 const Order = require('../models/orders.model');
 const User = require('../models/users.model');
 
-exports.updateUser = async (req, res, next) => {
+exports.updateUser = async (req, res) => {
   try {
     const users = await User.find();
     const orders = await Order.find();
-
-    //Checking for every user how many orders are available in Order Collection and Storing in an Array (AS filter will return an Array)
     users.forEach(async (user) => {
       const orderArr = orders.filter((order) => {
         return order.userId == user.userId;

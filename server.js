@@ -26,7 +26,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // require('./routes/order.route');
 const userRoute = require('./routes/users.route');
+const orderRoute = require('./routes/order.route');
 app.use(userRoute);
+app.use(orderRoute);
 
 // * Initialize mongoose and start service
 mongoose

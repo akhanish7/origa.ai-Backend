@@ -13,7 +13,7 @@ const userSchema = new mongoose.Schema({
   },
   name: {
     type: String,
-    required: [true, 'User name is REQUIRED'],
+    required: [true, 'user name required'],
   },
   noOfOrders: {
     type: Number,
@@ -21,4 +21,4 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model('UserSchema', userSchema);
+module.exports = mongoose.model('User', userSchema);
